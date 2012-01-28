@@ -1,9 +1,25 @@
+Compile:
+gcc insertionsort.c
+
+Run: ./file
+
+Explanation:
+
 This is insertion sort and I will explain shortly how it works.
 Imagine a Array A = <5, 2, 7, 3, 9, 1> what insertion sort will do is order the array from lowest to highest value (ascending)
-The algorithm will start at point 1 (or element 2 in our case with value 2) and take it out of the array. Compares it to the element before (the 5 in our case) see if it's bigger or smaller.
-If the value current is smaller than the value before (2 < 5 in our case) then apperently the current element needs to be before the element it is comparing to in order to have an ascending order. So you move the element (5 in our example) one position to the right. Then you need to compare to the element before the 5 but there is no element before the 5 so it will insert the element 2 in that place. Then you will do the same again starting with element value 7 and compare it to 2,5 and see it stays at the same position. Then you will compare value 3 with 2,5,7 and you'll see that you need to move the 7 one position to the right because 7>3 and you'll need to move 5 one position to the right (5>3) and than you are at the point that 2<3 so you don't need to move 2 and you can insert 3 at the current position.
+The algorithm will start at point 1 (or element 2 in our case with value 2) and take it out of the array. 
+Compares it to the element before (the 5 in our case) see if it's bigger or smaller.
+If the value current is smaller than the value before (2 < 5 in our case) then apperently the current element needs to be before the element it is comparing to in order to have an ascending order. 
+So you move the element (5 in our example) one position to the right. 
+Then you need to compare to the element before the 5 but there is no element before the 5 so it will insert the element 2 in that place. 
+Then you will do the same again starting with element value 7 and compare it to 2,5 and see it stays at the same position. 
+Then you will compare value 3 with 2,5,7 and you'll see that you need to move the 7 one position to the right because 7>3 and you'll need to move 5 one position to the right (5>3) and than you are at the point that 2<3 so you don't need to move 2 and you can insert 3 at the current position.
 
-This is the basic way insertion sort works. In the best-case where an array is already sorted <1,2,3,4,5,6,7,8,9> you don't need to move any elements and you will go through the array only ones. In the worst-case scenario <9,8,7,6,5,4,3,2,1> you'll need to go through the array n*(n-1) times. Both worst and best case scenarios are created with in mind you want the array to be sorted ascending. (In descending the worst and best case scenario will be inverted :))
+This is the basic way insertion sort works. 
+In the best-case where an array is already sorted <1,2,3,4,5,6,7,8,9> you don't need to move any elements and you will go through the array only ones. 
+In the worst-case scenario <9,8,7,6,5,4,3,2,1> you'll need to go through the array n*(n-1) times. 
+Both worst and best case scenarios are created with in mind you want the array to be sorted ascending. 
+(In descending the worst and best case scenario will be inverted :))
 
 
 
