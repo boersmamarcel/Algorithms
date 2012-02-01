@@ -1,8 +1,9 @@
 #include <stdio.h>
 
-int main(int argc, char* argv)
+int main(int argc, char* argv[])
 {
 
-	printf("Welcome to mergesort");
+	printf("Welcome to mergesort.\n");
 
+	return 0;
 }
