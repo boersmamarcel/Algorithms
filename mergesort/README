@@ -1,0 +1,23 @@
+Compile:
+	gcc -Wall mergesort.c
+
+Run:
+	./file.out
+
+Explanation:
+
+Everything about mergesort!
+
+We are going to do a mergesort, yeah that's pretty awesome!
+We have a unsorted array like this one <4,3,2,6,1,8,9> and we want to get this <1,2,3,4,6,8,9>.
+What mergesort does is split it into subarray's the first two arrays will be like this left = <4,3,2> and right = <6,1,8,9>.
+Then we will call mergesort on those arrays too. So left will be divided into two other arrays left = <4> and right = <3,2>
+and right will be splitted one more time into left = <3> and right = <2>.
+As you can see the mergesort algorithm will split the array into arrays of size one the next step is to merge them together.
+
+So I will merge first left = <3> and right = <2> so the only way to get this ascending is to make an array = <2,3> so let's do that.
+Than we want to merge left = <4> and right = <2,3> into a new array. We see that 2 is smaller than 4 so 2 is going to be the first element.
+Also 3 is smaller than 4 so 3 is going to be the next one. Then we get <2,3,4>.
+
+I'm not going to explain the right tree of this sorting algorithm but trust me it works the same as the left part.
+And finally we will get what we want <1,2,3,4,6,8,9>
