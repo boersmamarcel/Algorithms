@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
-* Function declaration for futher use in the class
+*  Function declaration for futher use in the class
 */
 void insertionsort( int *array, int count);
 
